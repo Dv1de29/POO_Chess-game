@@ -1,0 +1,37 @@
+# ninja log v6
+646	757	7693762741990806	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-done	c5b1a7e9c12580a3
+2	99	7693754788489919	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-mkdir	e56990c21d41c5a3
+99	2819	7693754815693284	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-download	dc6d998f7e4ff365
+2	99	7693754788489919	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-mkdir	e56990c21d41c5a3
+99	2819	7693754815693284	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-download	dc6d998f7e4ff365
+1	242	7693762734486233	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-update	c30b48bc0fc731dd
+1	242	7693762734486233	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-update	c30b48bc0fc731dd
+243	326	7693762737673437	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-patch	4aded37f681016d3
+243	326	7693762737673437	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-patch	4aded37f681016d3
+326	405	7693762738475395	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-configure	9bb35af7d96fae34
+326	405	7693762738475395	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-configure	9bb35af7d96fae34
+405	485	7693762739268591	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-build	665f74ccd6cc3789
+405	485	7693762739268591	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-build	665f74ccd6cc3789
+485	564	7693762740064993	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-install	fe4285b10a661b83
+485	564	7693762740064993	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-install	fe4285b10a661b83
+646	757	7693762741990806	CMakeFiles/ogg-populate-complete	c5b1a7e9c12580a3
+565	645	7693762740879267	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-test	85980b717a1d1e8c
+565	645	7693762740879267	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-test	85980b717a1d1e8c
+646	757	7693762741990806	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-done	c5b1a7e9c12580a3
+646	757	7693762741990806	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/CMakeFiles/ogg-populate-complete	c5b1a7e9c12580a3
+2	230	7693773096989072	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-update	c30b48bc0fc731dd
+2	230	7693773096989072	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-update	c30b48bc0fc731dd
+230	317	7693773100070662	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-patch	4aded37f681016d3
+230	317	7693773100070662	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-patch	4aded37f681016d3
+317	404	7693773100943532	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-configure	9bb35af7d96fae34
+317	404	7693773100943532	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-configure	9bb35af7d96fae34
+404	495	7693773101857332	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-build	665f74ccd6cc3789
+404	495	7693773101857332	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-build	665f74ccd6cc3789
+496	579	7693773102707094	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-install	fe4285b10a661b83
+496	579	7693773102707094	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-install	fe4285b10a661b83
+579	665	7693773103553386	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-test	85980b717a1d1e8c
+579	665	7693773103553386	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-test	85980b717a1d1e8c
+665	799	7693773104895169	CMakeFiles/ogg-populate-complete	c5b1a7e9c12580a3
+665	799	7693773104895169	ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-done	c5b1a7e9c12580a3
+665	799	7693773104895169	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/CMakeFiles/ogg-populate-complete	c5b1a7e9c12580a3
+665	799	7693773104895169	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/ogg-subbuild/ogg-populate-prefix/src/ogg-populate-stamp/ogg-populate-done	c5b1a7e9c12580a3

@@ -1,0 +1,37 @@
+# ninja log v6
+497	582	7693762762043458	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	e8fb199500f851ef
+2	83	7693755069964966	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	46f701f50d502078
+239	326	7693762759493502	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	17fd8ec94fe50044
+2	83	7693755069964966	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	46f701f50d502078
+84	3809	7693755107213883	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	6971aea16391ee80
+84	3809	7693755107213883	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	6971aea16391ee80
+2	239	7693762756307585	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	99083575def7e504
+239	326	7693762759493502	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	17fd8ec94fe50044
+327	410	7693762760324853	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	6c4d2aa53093015
+2	239	7693762756307585	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	99083575def7e504
+327	410	7693762760324853	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	6c4d2aa53093015
+663	773	7693762763954760	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	ff21329363c73d83
+410	496	7693762761191658	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	bebee12e484a9357
+410	496	7693762761191658	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	bebee12e484a9357
+497	582	7693762762043458	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	e8fb199500f851ef
+582	663	7693762762845741	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	8cd302e14b832b5b
+582	663	7693762762845741	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	8cd302e14b832b5b
+663	773	7693762763954760	CMakeFiles/vorbis-populate-complete	ff21329363c73d83
+663	773	7693762763954760	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	ff21329363c73d83
+663	773	7693762763954760	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate-complete	ff21329363c73d83
+1	219	7693773118421996	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	99083575def7e504
+1	219	7693773118421996	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	99083575def7e504
+219	302	7693773121367397	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	17fd8ec94fe50044
+219	302	7693773121367397	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	17fd8ec94fe50044
+302	383	7693773122177389	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	6c4d2aa53093015
+302	383	7693773122177389	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	6c4d2aa53093015
+384	464	7693773122983410	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	bebee12e484a9357
+384	464	7693773122983410	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	bebee12e484a9357
+464	543	7693773123775785	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	e8fb199500f851ef
+464	543	7693773123775785	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	e8fb199500f851ef
+543	627	7693773124620794	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	8cd302e14b832b5b
+543	627	7693773124620794	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	8cd302e14b832b5b
+628	734	7693773125692481	CMakeFiles/vorbis-populate-complete	ff21329363c73d83
+628	734	7693773125692481	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	ff21329363c73d83
+628	734	7693773125692481	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate-complete	ff21329363c73d83
+628	734	7693773125692481	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	ff21329363c73d83

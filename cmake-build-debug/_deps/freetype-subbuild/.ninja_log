@@ -1,0 +1,37 @@
+# ninja log v6
+2	99	7693754658856453	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir	75e305bfd4ecb8fa
+637	752	7693762731313166	CMakeFiles/freetype-populate-complete	72d7dff20320f6e3
+2	99	7693754658856453	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir	75e305bfd4ecb8fa
+385	467	7693762728455566	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	3e5b8f4aacb08f6e
+2	226	7693762723872729	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	80238beb9902f725
+226	307	7693762726859060	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	2d4455a85ff6adc4
+99	11619	7693754774059189	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download	bf3e88a61d54be5d
+99	11619	7693754774059189	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download	bf3e88a61d54be5d
+2	226	7693762723872729	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	80238beb9902f725
+226	307	7693762726859060	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	2d4455a85ff6adc4
+637	752	7693762731313166	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/CMakeFiles/freetype-populate-complete	72d7dff20320f6e3
+307	384	7693762727638340	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	9b8860efa926086f
+307	384	7693762727638340	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	9b8860efa926086f
+385	467	7693762728455566	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	3e5b8f4aacb08f6e
+467	552	7693762729298073	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	fde74ef4ab4c69a3
+467	552	7693762729298073	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	fde74ef4ab4c69a3
+552	637	7693762730156384	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	bec431f4ba3782c9
+552	637	7693762730156384	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	bec431f4ba3782c9
+637	752	7693762731313166	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	72d7dff20320f6e3
+637	752	7693762731313166	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	72d7dff20320f6e3
+2	237	7693773086282410	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	80238beb9902f725
+2	237	7693773086282410	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	80238beb9902f725
+237	323	7693773089441773	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	2d4455a85ff6adc4
+237	323	7693773089441773	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	2d4455a85ff6adc4
+323	409	7693773090272638	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	9b8860efa926086f
+323	409	7693773090272638	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	9b8860efa926086f
+409	493	7693773091142484	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	3e5b8f4aacb08f6e
+409	493	7693773091142484	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	3e5b8f4aacb08f6e
+493	577	7693773091982489	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	fde74ef4ab4c69a3
+493	577	7693773091982489	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	fde74ef4ab4c69a3
+577	663	7693773092837093	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	bec431f4ba3782c9
+577	663	7693773092837093	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	bec431f4ba3782c9
+663	777	7693773093968875	CMakeFiles/freetype-populate-complete	72d7dff20320f6e3
+663	777	7693773093968875	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	72d7dff20320f6e3
+663	777	7693773093968875	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/CMakeFiles/freetype-populate-complete	72d7dff20320f6e3
+663	777	7693773093968875	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	72d7dff20320f6e3

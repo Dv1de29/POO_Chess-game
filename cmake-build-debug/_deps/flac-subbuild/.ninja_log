@@ -1,0 +1,37 @@
+# ninja log v6
+2	91	7693754915821818	flac-populate-prefix/src/flac-populate-stamp/flac-populate-mkdir	e4c82fb28f233bd4
+2	91	7693754915821818	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-mkdir	e4c82fb28f233bd4
+233	313	7693762747537207	flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch	55c86abf86930ed6
+92	3488	7693754949791591	flac-populate-prefix/src/flac-populate-stamp/flac-populate-download	eb1478b08bee3486
+92	3488	7693754949791591	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-download	eb1478b08bee3486
+642	756	7693762751954193	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-done	1bebfae2e221109d
+2	233	7693762744481898	flac-populate-prefix/src/flac-populate-stamp/flac-populate-update	ba75e73fc76a72d3
+233	313	7693762747537207	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch	55c86abf86930ed6
+2	233	7693762744481898	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-update	ba75e73fc76a72d3
+313	395	7693762748354323	flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure	821fff327fcaf3f2
+313	395	7693762748354323	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure	821fff327fcaf3f2
+395	478	7693762749171230	flac-populate-prefix/src/flac-populate-stamp/flac-populate-build	d266be0e31ad988a
+395	478	7693762749171230	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-build	d266be0e31ad988a
+478	560	7693762749999529	flac-populate-prefix/src/flac-populate-stamp/flac-populate-install	6cad25ee925e5aaa
+478	560	7693762749999529	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-install	6cad25ee925e5aaa
+560	642	7693762750825088	flac-populate-prefix/src/flac-populate-stamp/flac-populate-test	f375c7f8bc771401
+560	642	7693762750825088	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-test	f375c7f8bc771401
+642	756	7693762751954193	CMakeFiles/flac-populate-complete	1bebfae2e221109d
+642	756	7693762751954193	flac-populate-prefix/src/flac-populate-stamp/flac-populate-done	1bebfae2e221109d
+642	756	7693762751954193	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate-complete	1bebfae2e221109d
+2	223	7693773107332856	flac-populate-prefix/src/flac-populate-stamp/flac-populate-update	ba75e73fc76a72d3
+2	223	7693773107332856	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-update	ba75e73fc76a72d3
+223	304	7693773110293439	flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch	55c86abf86930ed6
+223	304	7693773110293439	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-patch	55c86abf86930ed6
+304	383	7693773111075776	flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure	821fff327fcaf3f2
+304	383	7693773111075776	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-configure	821fff327fcaf3f2
+383	461	7693773111867412	flac-populate-prefix/src/flac-populate-stamp/flac-populate-build	d266be0e31ad988a
+383	461	7693773111867412	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-build	d266be0e31ad988a
+461	540	7693773112654925	flac-populate-prefix/src/flac-populate-stamp/flac-populate-install	6cad25ee925e5aaa
+461	540	7693773112654925	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-install	6cad25ee925e5aaa
+540	617	7693773113433413	flac-populate-prefix/src/flac-populate-stamp/flac-populate-test	f375c7f8bc771401
+540	617	7693773113433413	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-test	f375c7f8bc771401
+617	721	7693773114470591	CMakeFiles/flac-populate-complete	1bebfae2e221109d
+617	721	7693773114470591	flac-populate-prefix/src/flac-populate-stamp/flac-populate-done	1bebfae2e221109d
+617	721	7693773114470591	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/CMakeFiles/flac-populate-complete	1bebfae2e221109d
+617	721	7693773114470591	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/flac-populate-done	1bebfae2e221109d

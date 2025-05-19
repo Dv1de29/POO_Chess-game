@@ -1,0 +1,37 @@
+# ninja log v6
+4	159	7693754476572877	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	627103f6ffcbc3eb
+4	159	7693754476572877	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	627103f6ffcbc3eb
+159	10465	7693754579728828	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	5e91975eb488152e
+2	280	7693762712068448	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	5309e962d160f6c1
+159	10465	7693754579728828	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	5e91975eb488152e
+2	280	7693762712068448	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	5309e962d160f6c1
+280	369	7693762715691695	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	7bfd56a63ded6f04
+280	369	7693762715691695	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	7bfd56a63ded6f04
+369	455	7693762716535334	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9b6142be0a9f9890
+369	455	7693762716535334	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9b6142be0a9f9890
+455	546	7693762717450461	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cdafba1d455f7cac
+455	546	7693762717450461	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cdafba1d455f7cac
+546	640	7693762718400703	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	ba706b4737da62a6
+546	640	7693762718400703	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	ba706b4737da62a6
+641	722	7693762719212440	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	c95e6f7b900dd01d
+641	722	7693762719212440	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	c95e6f7b900dd01d
+722	833	7693762720334904	CMakeFiles/sfml-populate-complete	a099bfd214d7a7b5
+722	833	7693762720334904	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	a099bfd214d7a7b5
+722	833	7693762720334904	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	a099bfd214d7a7b5
+722	833	7693762720334904	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	a099bfd214d7a7b5
+4	255	7693773073364288	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	5309e962d160f6c1
+4	255	7693773073364288	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	5309e962d160f6c1
+255	339	7693773076667174	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	7bfd56a63ded6f04
+255	339	7693773076667174	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	7bfd56a63ded6f04
+340	426	7693773077518302	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9b6142be0a9f9890
+340	426	7693773077518302	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	9b6142be0a9f9890
+426	535	7693773078578657	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cdafba1d455f7cac
+426	535	7693773078578657	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	cdafba1d455f7cac
+535	719	7693773080413796	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	ba706b4737da62a6
+535	719	7693773080413796	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	ba706b4737da62a6
+719	841	7693773081671041	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	c95e6f7b900dd01d
+719	841	7693773081671041	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	c95e6f7b900dd01d
+842	966	7693773082932107	CMakeFiles/sfml-populate-complete	a099bfd214d7a7b5
+842	966	7693773082932107	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	a099bfd214d7a7b5
+842	966	7693773082932107	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	a099bfd214d7a7b5
+842	966	7693773082932107	C:/Users/David/OneDrive/Desktop/proiecte info unibuc/Clion_POO/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	a099bfd214d7a7b5
