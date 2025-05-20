@@ -270,7 +270,7 @@ void Play::render(sf::RenderWindow& window) {
 
     //// Drawing the time boxes
 
-    sf::Text textTime(this->timefont);
+    sf::Text textTime(*(this->timefont));
     textTime.setCharacterSize(30);
     textTime.setStyle(sf::Text::Italic);
 
@@ -327,7 +327,7 @@ void Play::render(sf::RenderWindow& window) {
     movestextBox.setFillColor(sf::Color::Black);
     window.draw(movestextBox);
 
-    sf::Text movesText(normalFont);
+    sf::Text movesText(*normalFont);
     movesText.setCharacterSize(20);
     movesText.setStyle(sf::Text::Italic);
     movesText.setPosition(sf::Vector2f(movestextBox.getPosition().x + 10, movestextBox.getPosition().y + 10));

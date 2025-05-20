@@ -5,6 +5,7 @@
 #include "SFML/Audio/Sound.hpp"
 
 #include "../board/gameboard.h"
+#include "../ResourceManager/resource_manager.h"
 
 #include <optional>
 
@@ -21,17 +22,14 @@ enum class States {
 
 class GameState{
 protected:
-    sf::Font romanFont;
-    sf::Font normalFont;
+    ResourceManager<sf::Font> fonts_resource;
+    std::shared_ptr<sf::Font> romanFont;
+    std::shared_ptr<sf::Font> normalFont;
     bool audioMode = true;
 public:
     GameState() /* : romanFont("./assets/LuxuriousRoman-Regular.ttf") */ {
-        if ( !romanFont.openFromFile("../assets/LuxuriousRoman-Regular.ttf")) {
-            throw std::runtime_error("Failed to load roman font");
-        }
-        if ( !normalFont.openFromFile("../assets/arial.ttf")) {
-            throw std::runtime_error("Failed to load normal font");
-        }
+        romanFont = fonts_resource.load("Roman font","../assets/LuxuriousRoman-Regular.ttf");
+        normalFont = fonts_resource.load("Normal Font", "../assets/arial.ttf");
     }
     virtual ~GameState() = default;
     virtual void handleEvents(App& app) = 0;
@@ -48,7 +46,7 @@ class MainMenu : public GameState {
 public:
     MainMenu() {
         for ( int i = 0; i < 3; i++) {
-            sf::Text text(romanFont);
+            sf::Text text(*romanFont);
             text.setCharacterSize(30);
             text.setFillColor(sf::Color::White);
             text.setStyle(sf::Text::Bold);
@@ -85,12 +83,12 @@ class Settings : public GameState {
 public:
     Settings() {
         for ( int i = 0; i < 3; i++) {
-            sf::Text text(romanFont);
+            sf::Text text(*romanFont);
             text.setCharacterSize(30);
             text.setFillColor(sf::Color::White);
             text.setStyle(sf::Text::Bold);
 
-            sf::Text option(romanFont);
+            sf::Text option(*romanFont);
             option.setCharacterSize(20);
             option.setFillColor(sf::Color::Black);
             option.setStyle(sf::Text::Italic);
@@ -130,14 +128,12 @@ class Play : public GameState {
     float whiteTime = 600;
     float blackTime = 600;
 
-    sf::Font timefont;
+    std::shared_ptr<sf::Font> timefont;
 
 
 public:
     Play() {
-        if ( !timefont.openFromFile("../assets/Pro Display tfb.ttf")) {
-            throw std::runtime_error("Failed to load arial font");
-        }
+        timefont = fonts_resource.load("Time Font", "../assets/Pro Display tfb.ttf");
     }
     ~Play() override = default;
 
