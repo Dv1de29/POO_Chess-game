@@ -1,4 +1,3 @@
-
 #include "gameboard.h"
 
 std::unique_ptr<Piece>& GameBoard::getPiece(int row, int col) {

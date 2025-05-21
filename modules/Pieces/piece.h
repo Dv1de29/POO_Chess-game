@@ -4,8 +4,13 @@
 
 #include <iostream>
 #include <vector>
+#include <filesystem>
+
+#include "../ResourceManager/resource_manager.h"
 
 #include "SFML/Graphics/Texture.hpp"
+
+namespace fs = std::filesystem;
 
 struct Coord{
     char col;
@@ -18,15 +23,27 @@ struct Coord{
 
 class Piece {
 protected:
-    sf::Texture texture;
+    ResourceManager<sf::Texture> textures_resources;
+    std::shared_ptr<sf::Texture> texture;
 public:
-	Piece() = default;
+	Piece() {
+        // try {
+            for ( const auto& entry : fs::directory_iterator("../assets/Piece_Texture")) {
+                if ( entry.is_regular_file() ) {
+                    texture = textures_resources.load(entry.path().stem().string(), entry.path().string());
+                    std::cerr << entry.path().stem().string() << std::endl;
+                }
+            }
+        // } catch ( const std::exception &e ) {
+            // throw std::runtime_error(e.what());
+        // }
+	}
     virtual ~Piece() = default;
     virtual void move() = 0;
     virtual std::vector<Coord> getMoves(Coord from) = 0;
     virtual std::string getColor() const = 0;
     virtual std::string type() const = 0;
-    sf::Texture& getTexture() { return texture; };
+    sf::Texture& getTexture() { return *texture; };
 
 };
 
@@ -34,10 +51,9 @@ class King : public Piece {
     std::string color;
 public:
     explicit King(std::string color_) : color(std::move(color_)) {
-        if ( !this->texture.loadFromFile("../assets/" + color + "_king.png") ) {
-            throw std::runtime_error("Failed to load King texture");
-        }
-    };
+        this->texture = textures_resources.get(color + "_king");
+    }
+
     ~King() override = default;
     void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
@@ -49,10 +65,8 @@ class Knight : public Piece {
     std::string color;
 public:
     explicit Knight(std::string color_) : color(std::move(color_)) {
-        if ( !this->texture.loadFromFile("../assets/" + color + "_knight.png") ) {
-            throw std::runtime_error("Failed to load Knight texture");
-        }
-    };
+        this->texture = textures_resources.get(color + "_knight");
+    }
     ~Knight() override = default;
     void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
@@ -64,10 +78,8 @@ class Bishop : public Piece {
     std::string color;
 public:
   explicit Bishop(std::string color_) : color(std::move(color_)) {
-      if ( !this->texture.loadFromFile("../assets/" + color + "_bishop.png") ) {
-          throw std::runtime_error("Failed to load Bishop texture");
-      }
-  };
+      this->texture = textures_resources.get(color + "_bishop");
+  }
   ~Bishop() override = default;
   void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
@@ -80,10 +92,8 @@ class Rook : public Piece {
     bool Moved = false;
   public:
     explicit Rook(std::string color_) : color(std::move(color_)) {
-        if ( !this->texture.loadFromFile("../assets/" + color + "_rook.png") ) {
-            throw std::runtime_error("Failed to load Rook texture");
-        }
-    };
+        this->texture = textures_resources.get(color + "_rook");
+    }
     ~Rook() override = default;
     void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
@@ -98,10 +108,8 @@ class Queen : public Piece {
     std::string color;
   public:
     explicit Queen(std::string color_) : color(std::move(color_)) {
-        if ( !this->texture.loadFromFile("../assets/" + color + "_queen.png") ) {
-            throw std::runtime_error("Failed to load Queen texture");
-        }
-    };
+        this->texture = textures_resources.get(color + "_queen");
+    }
     ~Queen() override = default;
     void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
@@ -113,11 +121,8 @@ class Pawn : public Piece {
     std::string color;
 public:
     explicit Pawn(std::string color_) : color(std::move(color_)) {
-        std::cout << color << '\n' << "DE CE NU MERGE VEVERITAAAAAA\n";
-        if ( !this->texture.loadFromFile("../assets/" + color + "_pawn.png") ) {
-            throw std::runtime_error("Failed to load Pawn texture");
-        }
-    };
+        this->texture = textures_resources.get(color + "_pawn");
+    }
     ~Pawn() override = default;
     void move() override{};
     std::vector<Coord> getMoves(Coord from) override;
