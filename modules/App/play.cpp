@@ -173,7 +173,7 @@ void Play::render(sf::RenderWindow& window) {
 
     ///// Drawing the board
 
-    float boardFromWindowY = window.getSize().y - 40;
+    float boardFromWindowY = static_cast<float>(window.getSize().y - 40);
     sf::RectangleShape backBoard(sf::Vector2f(boardFromWindowY, boardFromWindowY));
     backBoard.setFillColor(sf::Color::Black);
     backBoard.setOutlineColor(sf::Color::White);
@@ -185,8 +185,8 @@ void Play::render(sf::RenderWindow& window) {
 
     float chessBoxSize = (boardFromWindowY - 20) / 8;
 
-    gameBoard.setPos(backBoard.getPosition().x + 10, backBoard.getPosition().y + 10);
-    gameBoard.setSize(boardFromWindowY - 20, boardFromWindowY - 20);
+    gameBoard.setPos(static_cast<int>(backBoard.getPosition().x) + 10,static_cast<int>( backBoard.getPosition().y + 10));
+    gameBoard.setSize(static_cast<int>(boardFromWindowY - 20),static_cast<int>( boardFromWindowY - 20));
 
     std::vector<Coord> moves;
     if ( gameBoard.getSelectedBox() ) {
@@ -227,7 +227,7 @@ void Play::render(sf::RenderWindow& window) {
                 }
             }
 
-            if ( gameBoard.getSelectedBox() == true && moves.size() > 0 ) {
+            if ( gameBoard.getSelectedBox() == true && !moves.empty() ) {
                 for ( Coord &move : moves ) {
                     if ( Coord{static_cast<char>('a' + j), 7-i} == move ) {
                         chessBox.setFillColor(sf::Color::Red);
@@ -247,7 +247,7 @@ void Play::render(sf::RenderWindow& window) {
                 float spriteSize = chessBox.getSize().y / piece->getTexture().getSize().y;
                 pieceSprite.setScale(sf::Vector2f(spriteSize, spriteSize));
                 if ( gameBoard.isCheckMate() == true && piece->getColor() == gameBoard.getTurn() ) {
-                    if ( auto* king = dynamic_cast<King*>(piece.get())) {
+                    if ( auto* king = dynamic_cast<King*>(piece.get()); king) {
                         pieceSprite.setColor(sf::Color(70,70,70));
                         sf::FloatRect bound = pieceSprite.getGlobalBounds();
                         pieceSprite.setOrigin(sf::Vector2f(bound.size.x, bound.size.y));
@@ -256,7 +256,7 @@ void Play::render(sf::RenderWindow& window) {
                     }
                 }
                 if ( gameBoard.isCheckMate() == true && piece->getColor() != gameBoard.getTurn() ) {
-                    if ( auto* king = dynamic_cast<King*>(piece.get())) {
+                    if ( auto* king = dynamic_cast<King*>(piece.get()); king) {
                         pieceSprite.setColor(sf::Color(255, 215, 0));
                     }
                 }
@@ -333,6 +333,20 @@ void Play::render(sf::RenderWindow& window) {
     movesText.setPosition(sf::Vector2f(movestextBox.getPosition().x + 10, movestextBox.getPosition().y + 10));
     movesText.setString(gameBoard.getMovesString());
     window.draw(movesText);
+
+    if ( this->isGameOver() == true ) {
+        sf::Text gameOverText(*normalFont);
+        gameOverText.setStyle(sf::Text::Italic);
+        gameOverText.setCharacterSize(20);
+        gameOverText.setPosition( sf::Vector2f(20, window.getSize().y * 0.5));
+        if ( gameBoard.getTurn() == "white") {
+            gameOverText.setString("Black has won");
+        }
+        else {
+            gameOverText.setString("White has won");
+        }
+        window.draw(gameOverText);
+    }
 
     window.display();
 }

@@ -83,18 +83,18 @@ public:
     void setSize(int w, int h);
 
     void setPos(int x, int y);
-    bool inBoard( int x, int y);
+    bool inBoard( int x, int y) const;
 
     void setCoord( char col, int row);
     void setCoordRow( int row);
     void setCoordCol( char col);
-    Coord getCoord();
+    Coord getCoord() const;
 
     void setSelectedCoord( char col, int row);
-    Coord getSelectedCoord();
+    Coord getSelectedCoord() const;
 
     void setSelectedBox( bool selected);
-    bool getSelectedBox();
+    bool getSelectedBox() const;
 
     void setTurn( std::string turn);
     std::string getTurn();
@@ -103,13 +103,13 @@ public:
 
     std::string getMovesString();
 
-    Coord getCoordForMouse(int x, int y);
+    Coord getCoordForMouse(int x, int y) const;
 
     std::vector<Coord> legalMoves(Coord from, bool skipKingSafety = false);
-    Coord findKing(std::string color);
-    const bool isSafeMove(Coord from, Coord to);
-    const bool inCheck();
-    const bool isCheckMate();
+    Coord findKing (const std::string& color) const;
+    bool isSafeMove(Coord from, Coord to);
+    bool inCheck();
+    bool isCheckMate();
     std::vector<Coord> checkCastle();
 };
 

@@ -16,7 +16,7 @@ struct ResourceLoader {
 
 template<>
 struct ResourceLoader<sf::Font> {
-	static bool load(std::shared_ptr<sf::Font>& resource, const std::string& path) {
+	static bool load(const std::shared_ptr<sf::Font>& resource, const std::string& path) {
 		return resource->openFromFile(path);
 	}
 };

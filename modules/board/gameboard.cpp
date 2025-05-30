@@ -12,7 +12,7 @@ void GameBoard::setPos(int x, int y) {
     this->pos_ = {x, y};
 }
 
-bool GameBoard::inBoard(int x, int y) {
+bool GameBoard::inBoard(int x, int y) const{
     if ( pos_.x > x || pos_.x + size_.w < x || pos_.y > y || pos_.y + size_.h < y ) return false;
     return true;
 }
@@ -33,7 +33,7 @@ void GameBoard::setSelectedCoord(char col, int row) {
     this->selectedCoord = {col, row};
 }
 
-Coord GameBoard::getSelectedCoord() {
+Coord GameBoard::getSelectedCoord() const{
     return selectedCoord;
 }
 
@@ -41,7 +41,7 @@ void GameBoard::setSelectedBox(bool selected) {
     this->selectedBox = selected;
 }
 
-bool GameBoard::getSelectedBox() {
+bool GameBoard::getSelectedBox() const{
     return this->selectedBox;
 }
 
@@ -49,7 +49,7 @@ void GameBoard::setTurn(std::string turn) { this->turn = std::move(turn); }
 
 std::string GameBoard::getTurn() { return this->turn; }
 
-Coord GameBoard::getCoord() {
+Coord GameBoard::getCoord() const{
     return currentCoord;
 }
 
@@ -57,7 +57,7 @@ std::string GameBoard::getMovesString() {
     return this->boardHistory.getMoves();
 }
 
-Coord GameBoard::getCoordForMouse(int x, int y) {
+Coord GameBoard::getCoordForMouse(int x, int y) const{
     float chessBoxsize = static_cast<float>(size_.w) / 8;
     return Coord{ static_cast<char>(static_cast<int>((x - pos_.x) / chessBoxsize) + 'a'), 7 - static_cast<int>((y - pos_.y) / chessBoxsize)};
 }
@@ -65,7 +65,7 @@ Coord GameBoard::getCoordForMouse(int x, int y) {
 std::vector<Coord> GameBoard::legalMoves(Coord from, bool skipKingSafety) {
     std::vector<Coord> moves;
 
-    auto &piece = this->getPiece(from.row, static_cast<int>(from.col - 'a'));
+    const auto &piece = this->getPiece(from.row, static_cast<int>(from.col - 'a'));
     if (piece->type() == "King") {
         if (from.col != 'a') {
             moves.push_back(Coord{static_cast<char>(from.col - 1), from.row});
@@ -413,6 +413,8 @@ std::vector<Coord> GameBoard::legalMoves(Coord from, bool skipKingSafety) {
 
         return moves;
     }
+
+    return moves;
 }
 
 bool GameBoard::movePiece(Coord from, Coord to) {
@@ -471,7 +473,7 @@ bool GameBoard::movePiece(Coord from, Coord to) {
     return true;
 }
 
-const bool GameBoard::isSafeMove(Coord from, Coord to) {
+bool GameBoard::isSafeMove(Coord from, Coord to){
     auto& currentPiece = this->pieces[from.row][static_cast<int>(from.col - 'a')];
     std::unique_ptr<Piece> toPiece = std::move(this->pieces[to.row][static_cast<int>(to.col - 'a')]);
 
@@ -503,7 +505,7 @@ const bool GameBoard::isSafeMove(Coord from, Coord to) {
     return true;
 }
 
-Coord GameBoard::findKing(std::string color) {
+Coord GameBoard::findKing(const std::string& color) const{
     for ( int i = 0; i < 8; i++ ) {
         for ( int j = 0; j < 8; j++ ) {
             if ( auto* piece = this->pieces[i][j].get();
@@ -514,15 +516,17 @@ Coord GameBoard::findKing(std::string color) {
             }
         }
     }
+
+    return Coord{0,0};
 }
 
-const bool GameBoard::isCheckMate() {
+bool GameBoard::isCheckMate() {
     for ( int i = 0; i < 8; i++ ) {
         for ( int j = 0; j < 8; j++ ) {
             if ( auto* piece = this->pieces[i][j].get();
                 piece
                 && piece->getColor() == this->getTurn()) {
-                if ( this->legalMoves(Coord{static_cast<char>(j + 'a'), i}).size() > 0 ) {
+                if ( !this->legalMoves(Coord{static_cast<char>(j + 'a'), i}).empty() ) {
                     return false;
                 }
             }
@@ -531,7 +535,7 @@ const bool GameBoard::isCheckMate() {
     return true;
 }
 
-const bool GameBoard::inCheck() {
+bool GameBoard::inCheck() {
     for ( int i = 0; i < 8; i++ ) {
         for ( int j = 0; j < 8; j++ ) {
             if ( auto* piece = this->pieces[i][j].get();

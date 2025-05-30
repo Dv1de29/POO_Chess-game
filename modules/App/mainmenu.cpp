@@ -25,7 +25,7 @@ void MainMenu::handleEvents(App& app) {
                     }
                     break;
                 case sf::Keyboard::Key::Tab:
-                    currentSelection = (currentSelection + 1) % texts.size();
+                    currentSelection = (currentSelection + 1) % static_cast<int>(texts.size());
                     break;
                 default:
                     break;

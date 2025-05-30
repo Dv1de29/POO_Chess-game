@@ -27,7 +27,8 @@ void Settings::handleEvents(App& app) {
                             break;
                         case 1:
                             app.setAudio( !app.isAudio() );
-                            texts[1].setString( app.isAudio() ? "Audio: ON" : "Audio: OFF" );
+                            this->audioMode = app.isAudio();
+                            // texts[1].setString( app.isAudio() ? "Audio: ON" : "Audio: OFF" );
                             break;
                         case 2:
                             app.setMode(currentMode);
@@ -39,10 +40,10 @@ void Settings::handleEvents(App& app) {
                 break;
                 case sf::Keyboard::Key::Tab:
                     if ( inModesSelection == true ) {
-                        this->currentMode = (this->currentMode + 1) % this->options.size();
+                        this->currentMode = (this->currentMode + 1) % static_cast<int>(this->options.size());
                     }
                     else {
-                        currentSelection = (currentSelection + 1) % texts.size();
+                        currentSelection = (currentSelection + 1) % static_cast<int>(texts.size());
                     }
                 break;
                 default:
@@ -53,7 +54,7 @@ void Settings::handleEvents(App& app) {
 }
 
 void Settings::update(sf::RenderWindow& window, float deltaTime) {
-
+    texts[1].setString( this->audioMode ? "Audio: ON" : "Audio: OFF" );
 }
 
 void Settings::render(sf::RenderWindow& window) {
@@ -67,7 +68,7 @@ void Settings::render(sf::RenderWindow& window) {
             background.setPosition(sf::Vector2f(textRect.position.x - 10,textRect.position.y - 10));
             window.draw(background);
         }
-        texts[i].setPosition(sf::Vector2f((window.getSize().x - (texts[i].getCharacterSize() * texts[i].getString().getSize() * 0.5)) * 0.5, window.getSize().y * 0.3 + i * window.getSize().y * 0.1));
+        texts[i].setPosition(sf::Vector2f((window.getSize().x - (static_cast<double>(texts[i].getCharacterSize()) * static_cast<double>(texts[i].getString().getSize()) * 0.5)) * 0.5, window.getSize().y * 0.3 + i * window.getSize().y * 0.1));
         window.draw(texts[i]);
     }
 
@@ -85,12 +86,12 @@ void Settings::render(sf::RenderWindow& window) {
             options[i].setPosition(sf::Vector2f(textRect.x + 5, textRect.y + i * (options[i].getCharacterSize() * 1.7) + 15));
 
             if ( i == currentMode ) {
-                sf::FloatRect textRect = options[i].getGlobalBounds();
-                sf::RectangleShape background;
-                background.setFillColor(sf::Color(84, 81, 81));
-                background.setSize(sf::Vector2f(textRect.size.x + 10, textRect.size.y + 10));
-                background.setPosition(sf::Vector2f(textRect.position.x - 5,textRect.position.y - 5));
-                window.draw(background);
+                const sf::FloatRect textRect2 = options[i].getGlobalBounds();
+                sf::RectangleShape background2;
+                background2.setFillColor(sf::Color(84, 81, 81));
+                background2.setSize(sf::Vector2f(textRect2.size.x + 10, textRect2.size.y + 10));
+                background2.setPosition(sf::Vector2f(textRect2.position.x - 5,textRect2.position.y - 5));
+                window.draw(background2);
             }
             window.draw(options[i]);
         }

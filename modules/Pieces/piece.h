@@ -43,7 +43,7 @@ public:
     virtual std::vector<Coord> getMoves(Coord from) = 0;
     virtual std::string getColor() const = 0;
     virtual std::string type() const = 0;
-    sf::Texture& getTexture() { return *texture; };
+    sf::Texture& getTexture() const { return *texture; };
 
 };
 

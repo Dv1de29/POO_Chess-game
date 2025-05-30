@@ -80,6 +80,8 @@ class Settings : public GameState {
     int currentOption = 0;
     bool inModesSelection = false;
     int currentMode = 0;
+    bool audioMode = true;
+
 public:
     Settings() {
         for ( int i = 0; i < 3; i++) {
